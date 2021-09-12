@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- Header-->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>
+               <a href="#" class="roc-btn">ROC Post
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="roc-show">
+                  <li><a href="holmfirth.html">Holmfirth</a></li>
+                  <li><a href="#">Sowerby Bridge</a></li>
+                  <li><a href="#">Knutsford</a></li>
+                  <li><a href="#">Atherton</a></li>
+                  <li><a href="#">Brymbo</a></li>
+                  <li><a href="#">Ceinant</a></li>
+                  <li><a href="#">Grassington</a></li>
+                  <li><a href="#">Overton</a></li>
+                  <li><a href="#">St. Asaph</a></li>
+                  <li><a href="#">Todmorden</a></li>
+                  <li><a href="#">Turton</a></li>
+                  <li><a href="#">Weeton</a></li>
+               </ul>
+            </li>
+			
+			
+			
+            <li>
+               <a href="#" class="civ-btn">Civil
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="civ-show">
+                  <li><a href="#">Holdings Country Pottery</a></li>
+                  <li><a href="#">Fletchers Paper Mill</a></li>
+                  <li><a href="#">BAE Systems Woodford</a></li>
+                  <li><a href="#">Brock Mill</a></li>
+                  <li><a href="#">Haigh Hall Zoo</a></li>
+                  <li><a href="#">Haigh Hall Model Village</a></li>
+                  <li><a href="#">Camelot Theme Park</a></li>
+                  <li><a href="#">Leyland Test Track</a></li>
+                  <li><a href="#">Agecroft A Substation</a></li>
+                  <li><a href="#">Melba Plastics</a></li>
+                  <li><a href="#">Rosebank Mill</a></li>
+                  <li><a href="#">TSS Duke of Lancaster</a></li>
+               </ul>
+            </li>
+			
+			
+			
+			
+			
+            <li>
+               <a href="#" class="mil-btn">Military
+               <span class="fas fa-caret-down third"></span>
+               </a>
+               <ul class="mil-show">
+                  <li><a href="#">Army Decoy Control Building</a></li>
+                  <li><a href="#">Llanberis Bomb Store</a></li>
+                  <li><a href="#">Ulnes Walton MoS Depot</a></li>
+                  <li><a href="#">Worsely AAOR</a></li>
+               </ul>
+            </li>
+			
+			
+			
+			
+			
+			
+			
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Shortcuts</a></li>
+            <li><a href="#">Feedback</a></li>
+         </ul>
+      </nav>
+
+<!-- Header END-->
+
+
+<img class="bg" src="https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/0431-01_responsive_background_image_demo/images/background-photo.jpg" alt="some_text">
+
+  <!--########################## Site Footer ##########################-->
+<footer class="footer">
+
+
+<div class="linebttm"></div>
+<div class="container">
+
+<!--foote_bottom_ul_amrc ends here-->
+<p class="text-center">Copyright @2021 | Lee Mountain</p>
+<br>
+<ul class="social_footer_ul">
+<li><a class="twitter" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+<li><a class="instagram" href="http://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+<li><a class="flickr" href="https://www.flickr.com/photos/llrickjames"><i class="fa fa-flickr"></i></a></li>
+
+</ul>
+<!--social_footer_ul ends here-->
+</div>
+
+</footer>
+  <!--########################## Site Footer END ##########################-->
+
+
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.roc-btn').click(function(){
+             $('nav ul .roc-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.civ-btn').click(function(){
+             $('nav ul .civ-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('.mil-btn').click(function(){
+             $('nav ul .mil-show').toggleClass("show2");
+             $('nav ul .third').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+   </script>
+
+</body>
+</html>
